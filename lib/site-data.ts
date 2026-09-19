@@ -68,10 +68,10 @@ export const nav: NavItem[] = [
 
 export const buySellNav = [
   { label: 'Overview', href: '/buying-and-selling' },
-  { label: 'Buy', href: '/buy' },
+  // { label: 'Buy', href: '/buy' },
   { label: "Buyer's Guide", href: '/buyers-guide' },
   { label: 'Buyer Resources', href: '/buyer-resources' },
-  { label: 'Sell', href: '/sell' },
+ // { label: 'Sell', href: '/sell' },
   { label: 'Seller Advice', href: '/seller-advice' },
   { label: "Seller's Resources", href: '/sellers-resources' },
 ]
@@ -93,25 +93,26 @@ export const team: TeamMember[] = [
     phone: '(858) 243-5304',
     email: 'gingercouvrette@yahoo.com',
     calBRE: 'CalBRE #01915672',
+    image: '/images/halcyonheadshots/gingerweb.jpg',
     featured: true,
   },
-  { name: 'Norma Aguilar', phone: '(858) 254-2694', email: 'aleaguila1@hotmail.com', calBRE: 'CalBRE #01956133' },
-  { name: 'T.J. Zane', phone: '(619) 840-8718', email: 'tjzane@tjzane.com', calBRE: 'CalBRE #02178297' },
-  { name: 'Rindy Barnes', phone: '(858) 705-7633', email: 'mail@rindybarnes.com', calBRE: 'CalBRE #01930061' },
-  { name: 'John Couvrette', phone: '(858) 243-5318', email: 'john.couvrette@halcyonca.com', calBRE: 'CalBRE #02105871' },
-  { name: 'Cynthia Elizondo', phone: '(858) 353-1638', email: 'cynthiae1000@gmail.com', calBRE: 'CalBRE #01924853' },
-  { name: 'Jen Harty', phone: '(858) 252-4546', email: 'Jen.Harty.Homes@gmail.com', calBRE: 'CalBRE #02114482' },
-  { name: 'Kristine Kirkman', phone: '(858) 663-1077', email: 'kristinekirkman2@gmail.com', calBRE: 'CalBRE #02179840' },
-  { name: 'Tracy Sturney', phone: '(858) 335-6067', email: 'tracygetsreal@outlook.com', calBRE: 'CalBRE #00844044' },
-  { name: 'Victoria Luna', email: 'vickylunatc@gmail.com', calBRE: 'CalBRE #01887793' },
-  { name: 'Sheri Ortiz', phone: '(858) 335-8390', email: 'Sheri@Halcyonca.com', calBRE: 'CalBRE #02110275' },
-  { name: 'Adrieke Osmun', phone: '(858) 956-4305', email: 'adrieke.halcyon@gmail.com', calBRE: 'CalBRE #02046571' },
-  { name: 'Anna Short', phone: '(858) 208-3265', email: 'annashort@live.com', calBRE: 'CalBRE #02108501' },
-  { name: 'Louise Ziminsky', phone: '(858) 449-3645', email: 'louiseziminsky@gmail.com', calBRE: 'CalBRE #00907243' },
-  { name: 'Jan Dunlap', phone: '(858) 504-0327', email: 'jandunlaprealestate@gmail.com', calBRE: 'CalBRE #01714822' },
-  { name: 'Patrice Fuchs', phone: '(858) 735-6926', email: 'patricefuchs01@gmail.com', calBRE: 'CalBRE #02108501' },
-  { name: 'Torrey Rodgers', phone: '(619) 997-6878', email: 'torrey@halcyonca.com', calBRE: 'CalBRE #02233162' },
-  { name: 'Jamie Hall', phone: '(619) 997-6878', email: 'homesbyjamiehall@outlook.com', calBRE: 'CalBRE #02046571' },
+  { name: 'Norma Aguilar', phone: '(858) 254-2694', email: 'aleaguila1@hotmail.com', calBRE: 'CalBRE #01956133', image: '/images/halcyonheadshots/norma.jpg' },
+  { name: 'T.J. Zane', phone: '(619) 840-8718', email: 'tjzane@tjzane.com', calBRE: 'CalBRE #02178297', image: '/images/halcyonheadshots/tj.jpg' },
+  { name: 'Rindy Barnes', phone: '(858) 705-7633', email: 'mail@rindybarnes.com', calBRE: 'CalBRE #01930061', image: '/images/halcyonheadshots/rindy.jpg' },
+  { name: 'John Couvrette', phone: '(858) 243-5318', email: 'john.couvrette@halcyonca.com', calBRE: 'CalBRE #02105871', image: '/images/halcyonheadshots/john.jpg' },
+  { name: 'Cynthia Elizondo', phone: '(858) 353-1638', email: 'cynthiae1000@gmail.com', calBRE: 'CalBRE #01924853', image: '/images/halcyonheadshots/cynthia.jpg' },
+  { name: 'Jen Harty', phone: '(858) 252-4546', email: 'Jen.Harty.Homes@gmail.com', calBRE: 'CalBRE #02114482', image: '/images/halcyonheadshots/Meet-Jen-Harty.jpg' },
+  { name: 'Kristine Kirkman', phone: '(858) 663-1077', email: 'kristinekirkman2@gmail.com', calBRE: 'CalBRE #02179840', image: '/images/halcyonheadshots/Kristine-1-min-1-e1657044787820.jpg' },
+  { name: 'Tracy Sturney', phone: '(858) 335-6067', email: 'tracygetsreal@outlook.com', calBRE: 'CalBRE #00844044', image: '/images/halcyonheadshots/tracy.jpeg' },
+  { name: 'Victoria Luna', email: 'vickylunatc@gmail.com', calBRE: 'CalBRE #01887793', image: '/images/halcyonheadshots/victoria.jpg' },
+  { name: 'Sheri Ortiz', phone: '(858) 335-8390', email: 'Sheri@Halcyonca.com', calBRE: 'CalBRE #02110275', image: '/images/halcyonheadshots/Meet-Sheri-Ortiz.jpg' },
+  { name: 'Adrieke Osmun', phone: '(858) 956-4305', email: 'adrieke.halcyon@gmail.com', calBRE: 'CalBRE #02046571', image: '/images/halcyonheadshots/adrieke.jpg' },
+  { name: 'Anna Short', phone: '(858) 208-3265', email: 'annashort@live.com', calBRE: 'CalBRE #02108501', image: '/images/halcyonheadshots/anna.jpg' },
+  { name: 'Louise Ziminsky', phone: '(858) 449-3645', email: 'louiseziminsky@gmail.com', calBRE: 'CalBRE #00907243', image: '/images/halcyonheadshots/louise.jpg' },
+  { name: 'Jan Dunlap', phone: '(858) 504-0327', email: 'jandunlaprealestate@gmail.com', calBRE: 'CalBRE #01714822', image: '/images/halcyonheadshots/jan.jpg' },
+  { name: 'Patrice Fuchs', phone: '(858) 735-6926', email: 'patricefuchs01@gmail.com', calBRE: 'CalBRE #02108501', image: '/images/halcyonheadshots/patrice.jpg' },
+  { name: 'Torrey Rodgers', phone: '(619) 997-6878', email: 'torrey@halcyonca.com', calBRE: 'CalBRE #02233162', image: '/images/halcyonheadshots/torrey.jpeg' },
+  { name: 'Jamie Hall', phone: '(619) 997-6878', email: 'homesbyjamiehall@outlook.com', calBRE: 'CalBRE #02046571', image: '/images/halcyonheadshots/jamie.jpg' },
 ]
 
 export type Property = {
@@ -178,10 +179,13 @@ export type BlogPost = {
   title: string
   date: string
   excerpt: string
-  content: { heading?: string; body: string[] }[]
+  content: { 
+    heading?: string; 
+    body?: string[]; 
+    links?: { name: string; url: string; }[]; // <-- Add the brackets [] here
+  }[]
   image?: string
 }
-
 export const blogPosts: BlogPost[] = [
   {
     slug: 'tips-on-finding-your-perfect-realtor',
@@ -373,11 +377,73 @@ export const blogPosts: BlogPost[] = [
         heading: 'Buying in PUSD?',
         body: [
           'With two Halcyon associates having served on the PUSD School Board and many other associates who have worked in this area for a while, we are experts in what the Poway Unified School District has to offer.',
-          'Whether you are relocating or simply moving across town, the schools in our district are a major consideration for families. Reach out to us for detailed informational sheets on each of the elementary, middle, and high schools in PUSD.',
+          'Whether you are relocating or simply moving across town, the schools in our district are a major consideration for families. See below for detailed informational sheets on each of the elementary, middle, and high schools in PUSD.',
+        ],
+      },
+      {
+        heading: 'Elementary Schools',
+        links: [
+          { name: 'Adobe Bluffs', url: 'https://drive.google.com/file/d/1ORdt_r_IrH-yR9sej4uxAkqegVqpCPx6/view?usp=sharing' },
+          { name: 'Canyon View', url: 'https://drive.google.com/file/d/1-kLWcfHuG6N9M9q_KbR9zPrwsvuf0iFD/view?usp=drive_link' },
+          { name: 'Chaparral', url: 'https://drive.google.com/file/d/1UQ0b9eH_m1vtmTmjwtNESmcEUBs-g2Kh/view?usp=drive_link' },
+          { name: 'Creekside', url: 'https://drive.google.com/file/d/1xab1d9yOCI-61dM2aSLusvGpw8i7x4L_/view?usp=drive_link' },
+          { name: 'Deer Canyon', url: 'https://drive.google.com/file/d/139tGzdlAEaXFTXCKm9gp5eKpOYj0MlMJ/view?usp=drive_link' },
+          { name: 'Del Sur', url: 'https://drive.google.com/file/d/1WK_CnZBma7Op_X0eh3wFgWqmkrt084Zz/view?usp=drive_link' },
+          { name: 'Design39', url: 'https://drive.google.com/file/d/1WRx7x_GNFZRtqWM14vMI2TM0NXnELMWt/view?usp=drive_link' },
+          { name: 'Garden Road', url: 'https://drive.google.com/file/d/15m-baLsO8zJZ7GJ8Ohze-rKdMvYQmgM1/view?usp=drive_link' },
+          { name: 'Highland Ranch', url: 'https://drive.google.com/file/d/1Snjop-WQtWkG5qrPAAVLV2gJsBIkPmF8/view?usp=drive_link' },
+          { name: 'Los Penasquitos', url: 'https://drive.google.com/file/d/1501jGDa0afMZfxpzrOmLdwIR9OQevUsF/view?usp=drive_link' },
+          { name: 'Midland', url: 'https://drive.google.com/file/d/1mbha3HCBbpP0kBR2g6PLQPIC5YYWo4pZ/view?usp=drive_link' },
+          { name: 'Monterey Ridge', url: 'https://drive.google.com/file/d/1t5yxnNBXAmkGufMQKRui7__-DjUMNKJC/view?usp=drive_link' },
+          { name: 'Morning Creek', url: 'https://drive.google.com/file/d/13rwwY9DlrDUQW7u9nH_P9rQheLErZyVJ/view?usp=drive_link' },
+          { name: 'Painted Rock', url: 'https://drive.google.com/file/d/1RRhpOxpH2jA4ejRvarj5WfwZ3iPIIfqy/view?usp=drive_link' },
+          { name: 'Park Village', url: 'https://drive.google.com/file/d/11ZPyF3yXSA6HzvM6UTEpMJBakqFG9Gp6/view?usp=drive_link' },
+          { name: 'Pomerado', url: 'https://drive.google.com/file/d/1ch30flw14hqueePqZC7vYHNaOCQPsat6/view?usp=drive_link' },
+          { name: 'Rolling Hills', url: 'https://drive.google.com/file/d/1dgboadTSuGm6LzLg7jHnUMZ2wXu4u34W/view?usp=drive_link' },
+          { name: 'Shoal Creek', url: 'https://drive.google.com/file/d/1RZqo4ALldYEJ_PRnx-UUKftTCgaEa0LG/view?usp=drive_link' },
+          { name: 'Stone Ranch', url: 'https://drive.google.com/file/d/1_fteaiVd4sQyVd8wec_Yw4jxIHnzWnS-/view?usp=drive_link' },
+          { name: 'Sundance', url: 'https://drive.google.com/file/d/19DsYqk3Ijsjaqnypc0bBB9VnIH4Sghgx/view?usp=drive_link' },
+          { name: 'Sunset Hills', url: 'https://drive.google.com/file/d/1W7pe9UQAuPhjeh0pG4lCj_vZ23IXOAY9/view?usp=drive_link' },
+          { name: 'Tierra Bonita', url: 'https://drive.google.com/file/d/1XhF7jfqYjZum8Ca6ZI-at6VlcgqipW_x/view?usp=drive_link' },
+          { name: 'Turtleback', url: 'https://drive.google.com/file/d/1_2KPNZfb7ZNwwxPrKC-AfVj81zFxnTJB/view?usp=drive_link' },
+          { name: 'Valley', url: 'https://drive.google.com/file/d/1VcXNmaKAni4jhgZMv8KVRLztt2bJN-9E/view?usp=drive_link' },
+          { name: 'Westwood', url: 'https://drive.google.com/file/d/1lrQ-LSyenmhA9d1Uj2wIG1Mwvl76etxW/view?usp=drive_link' },
+          { name: 'Willow Grove', url: 'https://drive.google.com/file/d/1ZO_zqFCutehz4_CcP1FhNAUyJHXVx-CB/view?usp=drive_link' },
+        ],
+      },
+      {
+        heading: 'Middle Schools',
+        links: [
+          { name: 'Bernardo Heights', url: 'https://drive.google.com/file/d/1RZr56aQy-Q8D7oO5evCuis49CFbOr_KB/view?usp=drive_link' },
+          { name: 'Black Mountain', url: 'https://drive.google.com/file/d/1lk_j0QTtV8AWzlkiaiZI-Vi0Q1jq0lrn/view?usp=drive_link' },
+          { name: 'Connect Academy', url: 'https://drive.google.com/file/d/150ZzFCcG8nd5zUkN7_9LOm-jRjLtxOKQ/view?usp=drive_link' },
+          { name: 'Design39', url: 'https://drive.google.com/file/d/1WRx7x_GNFZRtqWM14vMI2TM0NXnELMWt/view?usp=drive_link' },
+          { name: 'Meadowbrook', url: 'https://drive.google.com/file/d/1eiqvhEiSCSt1VWdMugkXE--0n59jBQW2/view?usp=drive_link' },
+          { name: 'Mesa Verde', url: 'https://drive.google.com/file/d/1RrEoJV33Khbp0B2HEoINxF2hI_JxvTX4/view?usp=drive_link' },
+          { name: 'Oak Valley', url: 'https://drive.google.com/file/d/1EyOUh2vc_645hNmbL898QBpmIimhwxSc/view?usp=drive_link' },
+          { name: 'Twin Peaks', url: 'https://drive.google.com/file/d/1zCS9KzB_eYfnmEhGljYmUDAg0Q9MQYru/view?usp=drive_link' },
+        ],
+      },
+      {
+        heading: 'High Schools',
+        links: [
+          { name: 'Abraxas', url: 'https://drive.google.com/file/d/1_OqouBMS5tGVaLxHLMtYJK__Rn9Wgson/view?usp=drive_link' },
+          { name: 'Del Norte', url: 'https://drive.google.com/file/d/14kNd70R7CLVLYyM-YnTfSWdb0MoX-8nB/view?usp=drive_link' },
+          { name: 'Mt. Carmel', url: 'https://drive.google.com/file/d/1_NFkRp_SIyL3KxaQPdFOl7jQuna0mQQ5/view?usp=drive_link' },
+          { name: 'Poway', url: 'https://drive.google.com/file/d/1yivFz4cu1WAe0H_QWhkFBapMpuuytttl/view?usp=drive_link' },
+          { name: 'Rancho Bernardo', url: 'https://drive.google.com/file/d/15LaL3M1F6rI25gIVJlAdjdpmcLp5djRr/view?usp=drive_link' },
+          { name: 'Westview', url: 'https://drive.google.com/file/d/1NiZt2ZqNLf-ilOU6OVF1xbU1KkiyAj2t/view?usp=drive_link' },
+        ],
+      },
+      {
+        heading: 'Connection Schools',
+        links: [
+          { name: 'Poway to Palomar Middle College', url: 'https://drive.google.com/file/d/1wuBY6HoXCpIQtgvgTF0rk4XUZ1GmkKHV/view?usp=drive_link' },
         ],
       },
     ],
   },
+
 ]
 
 export const whyHalcyon = [

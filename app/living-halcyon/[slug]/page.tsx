@@ -45,9 +45,23 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
               <section key={i}>
                 {block.heading && <h2 className="mb-4 font-serif text-2xl text-foreground">{block.heading}</h2>}
                 <div className="space-y-4 leading-relaxed text-muted-foreground">
-                  {block.body.map((p, j) => (
-                    <p key={j}>{p}</p>
-                  ))}
+                  {block.body?.map((p, j) => <p key={j}>{p}</p>)}
+                  {block.links && (
+                    <ul className="grid gap-2 sm:grid-cols-2">
+                      {block.links.map((link) => (
+                        <li key={link.name}>
+                          <a
+                            href={link.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-sm font-medium text-silver underline-offset-4 hover:underline"
+                          >
+                            {link.name}
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
                 </div>
               </section>
             ))}

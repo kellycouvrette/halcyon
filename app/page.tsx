@@ -80,26 +80,17 @@ export default function HomePage() {
       </section>
 
       {/* Awards */}
-      <section className="py-20">
+      <section className="bg-black py-4 sm:py-5">
         <div className="container-page">
-          <SectionHeading center eyebrow="Recognition" title="Awarded & Trusted" />
-          <div className="mt-12 grid gap-6 sm:grid-cols-3">
+          <div className="grid items-center gap-4 sm:grid-cols-3 sm:gap-6">
             {[
-              { t: 'SDAR Circle of Excellence', s: '2024 Gold Level Producer' },
-              { t: 'Poway USD Certified Expert', s: 'Ginger Couvrette, Broker' },
-              { t: 'Woman of the Year', s: 'Presented by CA Senator Brian W. Jones' },
-            ].map((a, i) => (
-              <Reveal
-                key={a.t}
-                delay={i * 100}
-                className="flex flex-col items-center border border-border bg-card px-6 py-10 text-center"
-              >
-                <span className="flex h-16 w-16 items-center justify-center rounded-full border-2 border-silver font-serif text-2xl italic text-silver">
-                  H
-                </span>
-                <h3 className="mt-5 font-serif text-lg text-balance">{a.t}</h3>
-                <p className="mt-2 text-sm text-muted-foreground">{a.s}</p>
-              </Reveal>
+              '/images/halcyonheadshots/award1.png',
+              '/images/halcyonheadshots/award2.png',
+              '/images/halcyonheadshots/award3.jpeg',
+            ].map((image) => (
+              <div key={image} className="flex h-36 items-center justify-center sm:h-44">
+                <img src={image} alt="" className="h-full w-full object-contain" />
+              </div>
             ))}
           </div>
         </div>
@@ -138,6 +129,23 @@ export default function HomePage() {
               </Reveal>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section className="py-6">
+        <div className="container-page grid grid-cols-3 items-center gap-5 sm:grid-cols-6 sm:gap-6">
+          {[
+            '/images/halcyonheadshots/sponsor1.png',
+            '/images/halcyonheadshots/sponsor2.png',
+            '/images/halcyonheadshots/sponsor3.png',
+            '/images/halcyonheadshots/sponsor4.png',
+            '/images/halcyonheadshots/sponsor5.png',
+            '/images/halcyonheadshots/sponsor6.png',
+          ].map((image) => (
+            <div key={image} className="flex h-24 items-center justify-center sm:h-28">
+              <img src={image} alt="" className="max-h-full max-w-full object-contain" />
+            </div>
+          ))}
         </div>
       </section>
 

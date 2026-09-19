@@ -35,35 +35,51 @@ export default function AboutUsPage() {
   return (
     <>
       <PageHero
-        eyebrow="About Us"
         title="Meet the Team"
         subtitle="Our agents are committed to service, professionalism, and competence — and want to be your resource for all your real estate needs."
-        image="/images/hero-exterior.png"
+        image="/images/halcyonheadshots/halcyongroup.jpg"
       />
 
       {/* Founder */}
-      <section className="py-20">
+      <section className="py-12">
         <div className="container-page">
-          <SectionHeading center eyebrow="Founder & Broker" title="Ginger Couvrette" />
-          <div className="mx-auto mt-12 max-w-md border border-border bg-card">
-            <div className="aspect-[4/5] w-full overflow-hidden bg-secondary">
-              <SiteImage src={founder.image} alt={founder.name} label={founder.name} />
+          <div className="mx-auto max-w-[300px] overflow-hidden rounded-lg border border-border bg-card shadow-sm">
+            
+            {/* Header: Title & Name on Top */}
+            <div className="bg-primary p-3 text-center text-primary-foreground">
+              <span className="text-xs font-semibold uppercase tracking-wider text-silver">
+                Founder & Broker of Halcyon
+              </span>
+              <h3 className="mt-1 font-serif text-xl">{founder.name}</h3>
             </div>
-            <div className="bg-primary p-6 text-center text-primary-foreground">
-              <h3 className="font-serif text-2xl">{founder.name}</h3>
-              <p className="mt-1 text-sm text-silver">{founder.role}</p>
-              <div className="mt-3 space-y-1 text-sm text-primary-foreground/80">
-                {founder.phone && (
-                  <a href={`tel:${founder.phone.replace(/[^\d+]/g, '')}`} className="block hover:text-silver">
-                    {founder.phone}
-                  </a>
-                )}
-                <a href={`mailto:${founder.email}`} className="block break-all hover:text-silver">
-                  {founder.email}
-                </a>
-                <p className="text-primary-foreground/60">{founder.calBRE}</p>
+
+            {/* Picture in the Middle (Background removed so it's fully black around the photo) */}
+            <div className="bg-primary px-6 py-3 flex justify-center">
+              <div className="w-full max-h-[220px] overflow-hidden flex justify-center">
+                <SiteImage 
+                  src={founder.image} 
+                  alt={founder.name} 
+                  label={founder.name} 
+                  className="h-full w-auto object-contain"
+                />
               </div>
             </div>
+
+            {/* Contact Information on the Bottom */}
+            <div className="bg-primary p-4 text-center text-sm text-primary-foreground/90 space-y-1.5">
+              {founder.phone && (
+                <a href={`tel:${founder.phone.replace(/[^\d+]/g, '')}`} className="block hover:text-silver">
+                  {founder.phone}
+                </a>
+              )}
+              <a href={`mailto:${founder.email}`} className="block break-all hover:text-silver">
+                {founder.email}
+              </a>
+              {founder.calBRE && (
+                <p className="text-xs text-primary-foreground/60 pt-1">{founder.calBRE}</p>
+              )}
+            </div>
+
           </div>
         </div>
       </section>

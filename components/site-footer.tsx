@@ -19,7 +19,7 @@ function InstagramIcon({ className }: { className?: string }) {
 
 export function SiteFooter() {
   return (
-    <footer className="bg-primary text-primary-foreground">
+    <footer className="bg-[#040707] text-primary-foreground">
       <div className="container-page grid gap-10 py-14 md:grid-cols-2 lg:grid-cols-4">
         <div>
           <h2 className="font-serif text-2xl">{company.name}</h2>

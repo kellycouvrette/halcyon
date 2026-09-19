@@ -35,20 +35,20 @@ export function ContactCta({
   body?: string
 }) {
   return (
-    <section className="bg-primary text-primary-foreground">
-      <div className="container-page flex flex-col items-center gap-6 py-16 text-center">
-        <h2 className="font-serif text-3xl sm:text-4xl">{title}</h2>
-        <p className="max-w-2xl text-pretty leading-relaxed text-primary-foreground/80">{body}</p>
-        <div className="flex flex-col gap-3 sm:flex-row">
+    <section className="bg-white text-black">
+      <div className="container-page flex flex-col items-center gap-4 py-10 text-center">
+        <h2 className="font-serif text-2xl sm:text-3xl">{title}</h2>
+        <p className="max-w-xl text-xs sm:text-sm text-pretty leading-relaxed text-black/70">{body}</p>
+        <div className="flex flex-col gap-3 sm:flex-row pt-1">
           <a
             href={company.phoneHref}
-            className="bg-background px-8 py-3 text-sm font-semibold uppercase tracking-wider text-foreground transition-opacity hover:opacity-90"
+            className="bg-black text-white px-6 py-2.5 text-xs font-semibold uppercase tracking-wider transition-opacity hover:opacity-90"
           >
             Call {company.phone}
           </a>
           <a
             href={`mailto:${company.email}`}
-            className="border border-white/30 px-8 py-3 text-sm font-semibold uppercase tracking-wider transition-colors hover:border-silver hover:text-silver"
+            className="border border-black/30 px-6 py-2.5 text-xs font-semibold uppercase tracking-wider text-black transition-colors hover:border-black hover:bg-black/5"
           >
             Email Us
           </a>
