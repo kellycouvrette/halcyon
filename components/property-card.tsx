@@ -1,11 +1,12 @@
-import Link from 'next/link'
 import { SiteImage } from '@/components/site-image'
 import type { Property } from '@/lib/site-data'
 
 export function PropertyCard({ property }: { property: Property }) {
   return (
-    <Link
-      href={`/halcyon-properties/${property.slug}`}
+    <a
+      href={property.zillowUrl}
+      target="_blank"
+      rel="noopener noreferrer"
       className="group flex flex-col overflow-hidden border border-border bg-card transition-shadow hover:shadow-lg"
     >
       <div className="relative aspect-[4/3] overflow-hidden">
@@ -37,6 +38,6 @@ export function PropertyCard({ property }: { property: Property }) {
           </span>
         </div>
       </div>
-    </Link>
+    </a>
   )
 }
