@@ -133,7 +133,7 @@ export const properties: Property[] = [
   // --- FOR SALE (10 Properties) ---
   {
     slug: '1050-concord-st-point-loma',
-    title: 'Beautifully Updated 4-Bedroom Home with Bay Views in Point Loma',
+    title: 'Beautiful 4-Bedroom Home with Bay Views in Point Loma',
     status: 'for-sale',
     price: '$1,862,500',
     beds: 4,
