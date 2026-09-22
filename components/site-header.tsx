@@ -121,81 +121,82 @@ export function SiteHeader() {
   const isActive = (href: string) => (href === '/' ? pathname === '/' : pathname.startsWith(href))
 
   return (
-    <header className="sticky top-0 z-50 bg-[#040707] text-primary-foreground">
-      <div className="container-page flex flex-col justify-between py-5 lg:h-30">
-        
-        {/* Top Section: Logo & Company Name (Left) + Phone Number stacked under */}
-        <div className="flex items-start justify-between">
-          <div className="flex items-center gap-4">
-            <Link href="/" aria-label={`${company.name} home`}>
-              <Monogram />
+  <header className="sticky top-0 z-50 bg-[#040707] text-primary-foreground">
+    {/* Replaced container-page with w-full and responsive padding (e.g., px-6 lg:px-12) */}
+    <div className="w-full px-6 lg:px-12 flex flex-col justify-between py-5 lg:h-30">
+      
+      {/* Top Section: Logo & Company Name (Left) + Phone Number stacked under */}
+      <div className="flex items-start justify-between">
+        <div className="flex items-center gap-4">
+          <Link href="/" aria-label={`${company.name} home`}>
+            <Monogram />
+          </Link>
+          <div className="flex flex-col">
+            <Link href="/" className="font-serif text-2xl tracking-wide whitespace-nowrap sm:text-3xl">
+              {company.name}
             </Link>
-            <div className="flex flex-col">
-              <Link href="/" className="font-serif text-2xl tracking-wide whitespace-nowrap sm:text-3xl">
-                {company.name}
-              </Link>
-              <a
-                href={company.phoneHref}
-                className="mt-0.5 text-xs tracking-wide text-primary-foreground/70 transition-colors hover:text-silver"
-              >
-                {company.phone}
-              </a>
-            </div>
+            <a
+              href={company.phoneHref}
+              className="mt-0.5 text-xs tracking-wide text-primary-foreground/70 transition-colors hover:text-silver"
+            >
+              {company.phone}
+            </a>
           </div>
-
-          {/* Mobile Hamburger Button */}
-          <button
-            type="button"
-            className="inline-flex items-center justify-center p-2 lg:hidden"
-            aria-label={mobileOpen ? 'Close menu' : 'Open menu'}
-            aria-expanded={mobileOpen}
-            onClick={() => setMobileOpen((v) => !v)}
-          >
-            {mobileOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-          </button>
         </div>
 
-        {/* Bottom Section: Navigation Menu pushed to the bottom right */}
-        <div className="hidden lg:flex items-center justify-end pt-2">
-          <nav aria-label="Header menu" className="flex items-center gap-6">
-            {nav.map((item) => (
-              <div key={item.label} className="group relative">
-                <Link
-                  href={item.href}
-                  className={cn(
-                    'flex items-center gap-1 py-1 text-xs font-medium tracking-wide transition-colors hover:text-silver',
-                    isActive(item.href) ? 'text-silver' : 'text-primary-foreground/90',
-                  )}
-                >
-                  {item.label}
-                  {item.children && <ChevronDown className="h-3 w-3" aria-hidden="true" />}
-                </Link>
-                <DesktopDropdown item={item} pathname={pathname} />
-              </div>
-            ))}
-          </nav>
-        </div>
+        {/* Mobile Hamburger Button */}
+        <button
+          type="button"
+          className="inline-flex items-center justify-center p-2 mt-2.5 lg:hidden"
+          aria-label={mobileOpen ? 'Close menu' : 'Open menu'}
+          aria-expanded={mobileOpen}
+          onClick={() => setMobileOpen((v) => !v)}
+        >
+          {mobileOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+        </button>
       </div>
 
-      {/* Mobile nav dropdown */}
-      {mobileOpen && (
-        <nav aria-label="Mobile menu" className="border-t border-white/10 lg:hidden">
-          <ul className="container-page divide-y divide-white/10 py-2">
-            {nav.map((item) => (
-              <MobileNavItem key={item.label} item={item} pathname={pathname} onNavigate={() => setMobileOpen(false)} />
-            ))}
-            <li className="py-3">
-              <a
-                href={company.phoneHref}
-                className="flex items-center justify-center gap-2 border border-silver/70 px-4 py-2 text-xs font-medium text-silver transition-colors hover:bg-background hover:text-foreground"
+      {/* Bottom Section: Navigation Menu pushed to the bottom right of the screen */}
+      <div className="hidden lg:flex items-center justify-end pt-2">
+        <nav aria-label="Header menu" className="flex items-center gap-6">
+          {nav.map((item) => (
+            <div key={item.label} className="group relative">
+              <Link
+                href={item.href}
+                className={cn(
+                  'flex items-center gap-1 py-1 text-xs font-medium tracking-wide transition-colors hover:text-silver',
+                  isActive(item.href) ? 'text-silver' : 'text-primary-foreground/90',
+                )}
               >
-                <Phone className="h-4 w-4" aria-hidden="true" />
-                Call Us ({company.phone})
-              </a>
-            </li>
-          </ul>
+                {item.label}
+                {item.children && <ChevronDown className="h-3 w-3" aria-hidden="true" />}
+              </Link>
+              <DesktopDropdown item={item} pathname={pathname} />
+            </div>
+          ))}
         </nav>
-      )}
-    </header>
-  )
+      </div>
+    </div>
+
+    {/* Mobile nav dropdown */}
+    {mobileOpen && (
+      <nav aria-label="Mobile menu" className="border-t border-white/10 lg:hidden">
+        <ul className="px-6 divide-y divide-white/10 py-2">
+          {nav.map((item) => (
+            <MobileNavItem key={item.label} item={item} pathname={pathname} onNavigate={() => setMobileOpen(false)} />
+          ))}
+          <li className="py-3">
+            <a
+              href={company.phoneHref}
+              className="flex items-center justify-center gap-2 border border-silver/70 px-4 py-2 text-xs font-medium text-silver transition-colors hover:bg-background hover:text-foreground"
+            >
+              <Phone className="h-4 w-4" aria-hidden="true" />
+              Call Us ({company.phone})
+            </a>
+          </li>
+        </ul>
+      </nav>
+    )}
+  </header>
+);
 }
