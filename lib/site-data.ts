@@ -129,69 +129,24 @@ export type Property = {
   zillowUrl: string
 }
 
-export const properties: Property[] = [
-  // --- FOR SALE (10 Properties) ---
-  {
-    slug: '1050-concord-st-point-loma',
-    title: 'Beautiful 4-Bedroom Home with Bay Views in Point Loma',
-    status: 'for-sale',
-    price: '$1,862,500',
-    beds: 4,
-    baths: 2,
-    sqft: 1594,
-    address: '1050 Concord St, Point Loma, CA 92106',
-    date: 'June 22, 2026',
-    image: '/images/properties/for-sale/concord.webp',
-    zillowUrl:
-      'https://www.zillow.com/homedetails/1050-Concord-St-San-Diego-CA-92106/17063013_zpid/',
-  },
 
+export const properties: Property[] = [
+  // --- FOR SALE ---
   {
-    slug: '16749-obispo-ln-san-diego',
-    title: 'Single-Story Home with Mountain Views in Seven Oaks',
+    slug: '13211-wimberly-sq-san-diego',
+    title: 'Updated 2-Bedroom Condo in Sabre Springs',
     status: 'for-sale',
-    price: '$880,000',
+    price: '$567,000',
     beds: 2,
     baths: 2,
-    sqft: 1386,
-    address: '16749 Obispo Ln, San Diego, CA 92128',
+    sqft: 907,
+    address: '13211 Wimberly Sq Unit 285, San Diego, CA 92128',
     date: 'June 22, 2026',
-    image: '/images/properties/for-sale/obispo.webp',
+    image: '/images/properties/for-sale/wimberly.webp',
     zillowUrl:
-      'https://www.zillow.com/homedetails/16749-Obispo-Ln-San-Diego-CA-92128/16743192_zpid/',
+      'https://www.zillow.com/homedetails/13211-Wimberly-Sq-UNIT-285-San-Diego-CA-92128/16811111_zpid/',
   },
-
-  {
-    slug: '13278-wanesta-dr-poway',
-    title: 'Iconic Poway Family Home on a Quiet Cul-de-Sac with Park Views',
-    status: 'for-sale',
-    price: '$1,149,000',
-    beds: 4,
-    baths: 3,
-    sqft: 1520,
-    address: '13278 Wanesta Dr, Poway, CA 92064',
-    date: 'June 22, 2026',
-    image: '/images/properties/for-sale/wanesta.webp',
-    zillowUrl:
-      'https://www.zillow.com/homedetails/13278-Wanesta-Dr-Poway-CA-92064/16814758_zpid/',
-  },
-
-  {
-    slug: '11242-capilla-rd-san-diego',
-    title: 'Brightly Refreshed Single-Story Home with Indoor-Outdoor Living in Westwood',
-    status: 'for-sale',
-    price: '$1,175,000',
-    beds: 3,
-    baths: 2,
-    sqft: 1401,
-    address: '11242 Capilla Rd, San Diego, CA 92127',
-    date: 'June 22, 2026',
-    image: '/images/properties/for-sale/capilla.webp',
-    zillowUrl:
-      'https://www.zillow.com/homedetails/11242-Capilla-Rd-San-Diego-CA-92127/16739959_zpid/',
-  },
-
-  {
+    {
     slug: '718-stoneybrae-pl-escondido',
     title: 'Private 4.5-Acre Estate with Panoramic Mountain Views in Escondido',
     status: 'for-sale',
@@ -205,26 +160,11 @@ export const properties: Property[] = [
     zillowUrl:
       'https://www.zillow.com/homedetails/718-Stoneybrae-Pl-Escondido-CA-92027/333879246_zpid/',
   },
-
-  {
-    slug: '13211-wimberly-sq-san-diego',
-    title: 'Updated 2-Bedroom Condo with Resort-Style Community Amenities in Sabre Springs',
-    status: 'for-sale',
-    price: '$567,000',
-    beds: 2,
-    baths: 2,
-    sqft: 907,
-    address: '13211 Wimberly Sq #285, San Diego, CA 92128',
-    date: 'June 22, 2026',
-    image: '/images/properties/for-sale/wimberly.webp',
-    zillowUrl:
-      'https://www.zillow.com/homedetails/13211-Wimberly-Sq-UNIT-285-San-Diego-CA-92128/16811111_zpid/',  },
-
-  {
+    {
     slug: '500-w-harbor-san-diego',
     title: 'Waterfront Downtown Living at CityFront Terrace with Bay & City Views',
     status: 'for-sale',
-    price: '$915,000',
+    price: '$899,000',
     beds: 2,
     baths: 2,
     sqft: 1184,
@@ -236,14 +176,59 @@ export const properties: Property[] = [
   },
 
   {
+    slug: '12122-royal-birkdale-row-san-diego',
+    title: 'Resort-Style Living in Bernardo Heights',
+    status: 'for-sale',
+    price: '$599,000',
+    beds: 2,
+    baths: 2,
+    sqft: 1172,
+    address: '12122 Royal Birkdale Row Unit 103, San Diego, CA 92128',
+    date: 'June 22, 2026',
+    image: '/images/properties/for-sale/royalbirkdale.webp',
+    zillowUrl:
+      'https://www.zillow.com/homedetails/12122-Royal-Birkdale-Row-UNIT-103-San-Diego-CA-92128/16796970_zpid/',
+  },
+
+  {
+    slug: '16749-obispo-ln-san-diego',
+    title: 'Single-Story Home with Mountain Views in Seven Oaks',
+    status: 'for-sale',
+    price: '$865,000',
+    beds: 2,
+    baths: 2,
+    sqft: 1386,
+    address: '16749 Obispo Ln, San Diego, CA 92128',
+    date: 'June 22, 2026',
+    image: '/images/properties/for-sale/obispo.webp',
+    zillowUrl:
+      'https://www.zillow.com/homedetails/16749-Obispo-Ln-San-Diego-CA-92128/16743192_zpid/',
+  },
+
+  {
+    slug: '2076-tango-loop-chula-vista',
+    title: 'Modern Two-Story End-Unit Condo in Otay Ranch',
+    status: 'for-sale',
+    price: '$710,000',
+    beds: 3,
+    baths: 3,
+    sqft: 1495,
+    address: '2076 Tango Loop Unit 4, Chula Vista, CA 91915',
+    date: 'June 22, 2026',
+    image: '/images/properties/for-sale/tango.webp',
+    zillowUrl:
+      'https://www.zillow.com/homedetails/2076-Tango-Loop-UNIT-4-Chula-Vista-CA-91915/333211757_zpid/',
+  },
+
+  {
     slug: '3796-alabama-st-san-diego',
     title: 'Affordable North Park 1-Bedroom Condo in a Gated Community',
     status: 'for-sale',
-    price: '$295,000',
+    price: '$279,995',
     beds: 1,
     baths: 1,
     sqft: 378,
-    address: '3796 Alabama St #1, San Diego, CA 92104',
+    address: '3796 Alabama St Unit 1, San Diego, CA 92104',
     date: 'June 22, 2026',
     image: '/images/properties/for-sale/alabama.webp',
     zillowUrl:
@@ -251,45 +236,75 @@ export const properties: Property[] = [
   },
 
   {
-    slug: '1441-9th-san-diego',
-    title: 'Stunning 17th-Floor Corner Residence with Panoramic Bay & City Views',
+    slug: '851-53-n-49th-st-san-diego',
+    title: 'Spacious Multi-Family Investment Property in Emerald Hills',
     status: 'for-sale',
-    price: '$949,000',
-    beds: 2,
+    price: '$875,000',
+    beds: 4,
     baths: 2,
-    sqft: 1355,
-    address: '1441 9th Ave #1704, San Diego, CA 92101',
+    sqft: 1480,
+    address: '851-53 N 49th St, San Diego, CA 92102',
     date: 'June 22, 2026',
-    image: '/images/properties/for-sale/9th.webp',
+    image: '/images/properties/for-sale/49th.webp',
     zillowUrl:
-      'https://www.zillow.com/homedetails/1441-9th-Ave-UNIT-1704-San-Diego-CA-92101/83893478_zpid/',
+      'https://www.zillow.com/homedetails/851-53-N-49th-St-San-Diego-CA-92102/17080045_zpid/',
   },
 
   {
-    slug: '12122-royal-birkdale-row-san-diego',
-    title: 'Light-Filled 2-Bedroom Condo with Resort-Style Living in Bernardo Heights',
+    slug: '1225-arcadia-ave-vista',
+    title: 'Multi-Family Investment Opportunity with Private Decks',
     status: 'for-sale',
-    price: '$599,000',
-    beds: 2,
-    baths: 2,
-    sqft: 1172,
-    address: '12122 Royal Birkdale Row #103, San Diego, CA 92128',
+    price: '$1,525,000',
+    beds: 9,
+    baths: 7,
+    sqft: 4230,
+    address: '1225 Arcadia Ave, Vista, CA 92084',
     date: 'June 22, 2026',
-    image: '/images/properties/for-sale/royalbirkdale.webp',
+    image: '/images/properties/for-sale/arcadia.webp',
     zillowUrl:
-      'https://www.zillow.com/homedetails/12122-Royal-Birkdale-Row-UNIT-103-San-Diego-CA-92128/16796970_zpid/',
+      'https://www.zillow.com/homedetails/1225-Arcadia-Ave-Vista-CA-92084/295339767_zpid/',
   },
 
-  // --- FOR RENT (5 Properties) ---
+  {
+    slug: '1242-46-helix-st-spring-valley',
+    title: 'Multi-Family Investment Property with Views in Spring Valley',
+    status: 'for-sale',
+    price: '$850,000',
+    beds: 4,
+    baths: 2,
+    sqft: 1490,
+    address: '1242-46 Helix Ct, Spring Valley, CA 91977',
+    date: 'June 22, 2026',
+    image: '/images/properties/for-sale/helix.webp',
+    zillowUrl:
+      'https://www.zillow.com/homedetails/1242-46-Helix-Ct-Spring-Valley-CA-91977/17115788_zpid/',
+  },
+
+  // --- FOR RENT ---
+  {
+    slug: '3396-31st-st-san-diego',
+    title: 'Charming 2-Bedroom Home in North Park',
+    status: 'for-rent',
+    price: '$3,750/mo',
+    beds: 2,
+    baths: 1,
+    sqft: 884,
+    address: '3396 31st St, San Diego, CA 92104',
+    date: 'June 11, 2026',
+    image: '/images/properties/for-rent/31st.webp',
+    zillowUrl:
+      'https://www.zillow.com/homedetails/3396-31st-St-San-Diego-CA-92104/16974889_zpid/',
+  },
+
   {
     slug: '1785-marita-ln-fallbrook',
-    title: 'Spacious Fallbrook Home with Private Outdoor Space and Room to Entertain',
+    title: 'Spacious Fallbrook Single-Family Home',
     status: 'for-rent',
-    price: '$4,050/mo',
+    price: '$3,995/mo',
     beds: 3,
     baths: 2.5,
     sqft: 2300,
-    address: '1785 Marita Ln Unit A, Fallbrook, CA 92028',
+    address: '1785 Marita Ln, Fallbrook, CA 92028',
     date: 'June 11, 2026',
     image: '/images/properties/for-rent/maritaA.webp',
     zillowUrl:
@@ -297,29 +312,43 @@ export const properties: Property[] = [
   },
 
   {
-    slug: '16755-coyote-bush-dr-san-diego',
-    title: 'Spacious 3-Bedroom Townhome in Desirable Black Mountain Ranch',
+    slug: '3765-boundary-st-san-diego',
+    title: 'Modern Condo/Apartment Unit in North Park',
     status: 'for-rent',
-    price: '$4,900/mo',
-    beds: 3,
-    baths: 3,
-    sqft: 1855,
-    address: '16755 Coyote Bush Dr #34, San Diego, CA 92127',
+    price: '$2,250/mo',
+    beds: 1,
+    baths: 1,
+    sqft: 536,
+    address: '3765 Boundary St Unit 2, San Diego, CA 92104',
     date: 'June 11, 2026',
-    image: '/images/properties/for-rent/coyote.webp',
+    image: '/images/properties/for-rent/boundary.webp',
     zillowUrl:
-      'https://www.zillow.com/b/16755-coyote-bush-dr-san-diego-ca-BMRdb7/',
+      'https://www.zillow.com/homedetails/3765-Boundary-St-UNIT-2-San-Diego-CA-92104/16957614_zpid/',
   },
 
   {
-    slug: '1785-marita-ln-unit-2-fallbrook',
-    title: 'Charming 2-Bedroom Fallbrook Guest Home with Private Living Space',
+    slug: '1260-e-washington-ave-el-cajon',
+    title: 'Bright & Functional Apartment in El Cajon',
     status: 'for-rent',
-    price: '$3,200/mo',
+    price: '$1,935/mo',
+    beds: 2,
+    baths: 1,
+    sqft: 800,
+    address: '1260 E Washington Ave Unit 13, El Cajon, CA 92019',
+    date: 'June 11, 2026',
+    image: '/images/properties/for-rent/washington.webp',
+    zillowUrl:
+'https://www.zillow.com/homedetails/1260-E-Washington-Ave-13-El-Cajon-CA-92019/2067058314_zpid/'  },
+
+  {
+    slug: '1785-marita-ln-unit-a-fallbrook',
+    title: 'Charming 2-Bedroom Fallbrook Guest Home',
+    status: 'for-rent',
+    price: '$2,995/mo',
     beds: 2,
     baths: 1,
     sqft: 1200,
-    address: '1785 Marita Ln Unit B, Fallbrook, CA 92028',
+    address: '1785 Marita Ln Unit A, Fallbrook, CA 92028',
     date: 'June 11, 2026',
     image: '/images/properties/for-rent/maritaB.webp',
     zillowUrl:
@@ -328,9 +357,9 @@ export const properties: Property[] = [
 
   {
     slug: '13502-los-olivos-ave-poway',
-    title: 'Fully Remodeled 4-Bedroom Poway Home with Pool & Covered Patio',
+    title: 'Remodeled 4-Bedroom Poway Home with Pool & Covered Patio',
     status: 'for-rent',
-    price: '$4,445/mo',
+    price: '$4,200/mo',
     beds: 4,
     baths: 2,
     sqft: 1387,
@@ -340,23 +369,7 @@ export const properties: Property[] = [
     zillowUrl:
       'https://www.zillow.com/homedetails/13502-Los-Olivos-Ave-Poway-CA-92064/16829807_zpid/',
   },
-
-  {
-    slug: '13451-provision-way-valley-center',
-    title: 'Modern 4-Bedroom Single-Story Home with 3-Car Garage in Valley Center',
-    status: 'for-rent',
-    price: '$4,295/mo',
-    beds: 4,
-    baths: 3,
-    sqft: 2620,
-    address: '13451 Provision Way, Valley Center, CA 92082',
-    date: 'June 11, 2026',
-    image: '/images/properties/for-rent/provision.webp',
-    zillowUrl:
-      'https://www.zillow.com/homedetails/13451-Provision-Way-Valley-Center-CA-92082/96793044_zpid/',
-  },
 ]
-
 
 export type BlogPost = {
   slug: string
