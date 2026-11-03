@@ -369,6 +369,20 @@ export const properties: Property[] = [
     zillowUrl:
       'https://www.zillow.com/homedetails/13502-Los-Olivos-Ave-Poway-CA-92064/16829807_zpid/',
   },
+  {
+    slug: '15076-eastvale-rd-poway',
+    title: 'Spacious Single-Family Home in High Valley Estates',
+    status: 'for-rent',
+    price: '$7,900/mo',
+    beds: 4,
+    baths: 3.5,
+    sqft: 3167,
+    address: '15076 Eastvale Rd, Poway, CA 92064',
+    date: 'June 11, 2026',
+    image: '/images/properties/for-rent/eastvale.webp',
+    zillowUrl:
+      'https://www.zillow.com/homedetails/15076-Eastvale-Rd-Poway-CA-92064/16748835_zpid/',
+  },
 ]
 
 export type BlogPost = {
